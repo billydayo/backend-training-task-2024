@@ -32,7 +32,13 @@ const monthSportMoney = 3000;
 // 條件二：瑜伽團課只能一次買 3 堂
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 
-console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
+let AlexBudget = 0;
+let remainMoney = 0;
+
+AlexBudget = 3*yogaGroupClass + 1*WeightTrainGroupClass + 1*WeightTrainClass1to1;
+console.log(AlexBudget);
+remainingMoney = monthSportMoney-AlexBudget;
+console.log(`Alex 買完課程了，他一共剩下 remainingMoney 元`);
 
 // ### 題目四：線稿圖截圖，看圖宣告變數
 // 請參考資料夾內 q4.webp 圖片
