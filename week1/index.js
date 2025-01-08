@@ -136,3 +136,10 @@ let numberArr2 = numberArr1;
 numberArr2.push(20);
 numberArr2 = [25, 30, 35];
 console.log(numberArr1, numberArr2);
+
+//宣告一個變數名稱為 numberArr1，並賦予陣列為 [5, 10, 15]
+//宣告一個變數名稱為 numberArr2，並傳到numberArr1的陣列
+//陣列[5, 10, 15] +1個值為20變成了[5, 10, 15, 20]
+//把numberArr2 賦予陣列為 [25, 30, 35]
+//答案為[5, 10, 15, 20],[25, 30, 35]
+
