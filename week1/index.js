@@ -38,7 +38,7 @@ let remainMoney = 0;
 AlexBudget = 3*yogaGroupClass + 1*WeightTrainGroupClass + 1*WeightTrainClass1to1;
 console.log(AlexBudget);
 remainingMoney = monthSportMoney-AlexBudget;
-console.log(`Alex 買完課程了，他一共剩下 remainingMoney 元`);
+console.log(`Alex 買完課程了，他一共剩下  ${remainingMoney} 元`);
 
 // ### 題目四：線稿圖截圖，看圖宣告變數
 // 請參考資料夾內 q4.webp 圖片
@@ -74,6 +74,9 @@ const sun = 1;
 
 let myWater = 2000; // 水壺容量
 myWater -= 500; // 早上喝了 500cc
+myWater -= 800;
+myWater += 1000;
+myWater -= 700;
 
 console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
