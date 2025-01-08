@@ -54,6 +54,15 @@ let discount = 0.9;
 // 4-2. 目前一起等待的機車有 8 台
 // 4.3. Alex 望向天空，看到天上有 5 朵白雲和 1 顆太陽
 
+let greenLightTime = 28;
+let isGreenLight = false;
+
+let motorcycle = 8;
+
+let cloud = 5;
+const sun = 1;
+
+
 // ### 題目六：情境題：簡單變數計算
 // 情境：Alex 每天都會帶著 2000cc 的水壺
 // 他早上喝了 500cc
