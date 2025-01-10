@@ -74,11 +74,11 @@ let coachBonus = baseBonus; // 教練業績獎金帳單，並已加入條件一�
 // 練習：計算教練業績獎金
 
 if(coachIncome > 300000){
-  coachBonus = baseBonus + coachIncom*0.2 
+  coachBonus = baseBonus + coachIncome*0.2 
 }else if(coachIncome > 100000){
-  coachBonus = baseBonus + coachIncom*0.15
+  coachBonus = baseBonus + coachIncome*0.15
 }else{
-  coachBonus = baseBonus + coachIncom*0.1
+  coachBonus = baseBonus + coachIncome*0.1
 }
 
 console.log(`小明總共需支付 $${coachBonus} 獎金`);
@@ -94,6 +94,30 @@ if (playerA === '剪刀' && playerB === '剪刀') {
   console.log('平手');
 }
 // 練習：使用 if, else if, else 判斷輸贏
+
+let playerA = '剪刀';
+let playerB = '剪刀';
+if (playerA === playerB) {
+  console.log('平手');
+}else if(playerA === '石頭'){
+    if(playerB = '剪刀'){
+      console.log('playerA贏');
+    }else{
+      console.log('playerB贏');
+    }
+}else if(playerA === '剪刀'){
+    if(playerB = '布'){
+      console.log('playerA贏');
+    }else{
+      console.log('playerB贏');
+    }
+}else if(playerA === '布'){
+    if(playerB = '石頭'){
+      console.log('playerA贏');
+    }else{
+      console.log('playerB贏');
+    }
+}
 
 // ### 題目六：陣列、物件變數定義
 // 這是一間位於高雄市的健身房，名為「高雄市健身教練聯盟」，專注於提供高品質的健身指導服務。健身房內有多位專業教練，以下是兩位教練的詳細介紹：
