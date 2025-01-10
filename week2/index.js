@@ -223,9 +223,9 @@ console.log(performanceData);
 // 練習：使用 `物件包含物件` 的格式定義運動類型與每分鐘消耗卡路里
 
 const activities = {
-    跑步機:10,
-    瑜伽:5,
-    騎腳踏車:8
+    runmachine:10,
+    yoga:5,
+    bike:8
 };
 console.log(activities);
 
@@ -238,6 +238,10 @@ console.log(activities);
 let calorieBurn = 0;
 
 // 練習：計算小明今日消耗的卡路里
+
+calorieBurn += 20*(activities.bike);
+calorieBurn += 30*(activities.runmachine);
+calorieBurn += 40*(activities.yoga);
 
 console.log(`小明今日一共消耗約 ${calorieBurn} 卡路里。`);
 
