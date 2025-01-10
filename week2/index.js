@@ -139,9 +139,47 @@ if (playerA === playerB) {
 - 是否接收新學員：否
 */
 
-const gymCoach = {}; // 練習：使用物件變數定義兩位教練的資訊
+const gymCoach = {
+    coaches:[{
+        name:'王教練',
+        skill:'力量訓練,減重課程',
+        personalTrainingCourses:
+         {
+          money:'2000元',
+          time:'60分鐘',
+          空堂:'true',
+         },
+         groupTrainingCourses:
+         {
+          money:'1500元',
+          time:'90分鐘',
+          空堂:'flase',
+         },
+         background:'王教練擁有 5 年教學經驗，專精於提升學員的肌力與減脂，適合希望快速達成體能目標的學員',
+         accessNewStudent:'true'},
 
-console.log(gymCoach);
+         {
+            name:'李教練',
+            skill:'瑜伽,體態雕塑',
+            personalTrainingCourses:
+            {
+            money:'1800元',
+            time:'50分鐘',
+            空堂:'false',
+            },
+            groupTrainingCourses:
+            {
+            money:'1200元',
+            time:'75分鐘',
+            空堂:'true',
+            },
+         background:'李教練是一位瑜伽大師，擁有 10 年教學經驗，擅長幫助學員雕塑完美體態，適合希望改善姿態與柔軟度的學員',
+         accessNewStudent:'false'
+         }
+        ],
+};
+  
+  console.log(gymCoach);
 
 // ### 題目七：
 // 主管要求健身中心的兩位教練業績都需達到 50,000元
