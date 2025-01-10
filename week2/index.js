@@ -49,11 +49,11 @@ let BobPrice = 1800; /* Bob 消費金額 */
 let BobIsVip = false; /* Bob 是否為 VIP */
 
 // 練習：（可自行將下方程式碼的註解刪除，完成答題）
-// if () {
-//   console.Log（"客戶您好，您有符合贈品資格"）；
-// } else {
-//   console.Log（"客戶您好，您沒有符合贈品資格"）
-// }
+ if (BobPrice >= giftPriceRule || BobIsVip = true) {
+   console.Log（"客戶您好，您有符合贈品資格"）；
+ } else {
+   console.Log（"客戶您好，您沒有符合贈品資格"）
+ }
 
 console.log(`贈品還剩下${giftNum}個`);
 
