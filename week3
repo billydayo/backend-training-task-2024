@@ -1,1 +1,49 @@
+const members = ["Alice", "Bob", "Charlie", "Diana", "Evan", "Fiona", "George", "Hannah"];
 
+purchaseRecords =[];
+
+let courses = 0;
+let money = 0;
+let total = 0;
+let totalPrice = 0; //總營業額
+let zerobuy = members;//看誰沒買
+
+function addPurchaseRecord(name,num){
+  if(num>0 && members.includes(name)){
+    if(num>20){
+      money = 1100
+    }else if(num>10){
+      money = 1300
+    }else if(num>0){
+      money = 1500
+    }
+    total = num * money;
+    purchaseRecords.push(`{name:${name},num:${num},total:${total}}`);
+    console.log(`新增購買記錄成功！會員 ${name} 購買 ${num} 堂課，總金額為 ${total} 元`);
+    totalPrice += total;//算總營業額
+    zerobuy = zerobuy.filter(function(item){
+        return item !== name
+    });
+  }
+  else
+  {
+    console.log("輸入錯誤，請輸入有效的會員名稱和課程數量");
+  }
+}
+
+addPurchaseRecord("Alice",2);
+addPurchaseRecord("Bob",15);
+addPurchaseRecord("Billy",3);
+
+function calculateTotalPrice(){
+  console.log(`目前總營業額為 ${totalPrice} 元`);
+}
+
+calculateTotalPrice();
+
+
+function filterNoPurchaseMember(name){
+  console.log(`未購買課程的會員有：${zerobuy}`);
+}
+
+filterNoPurchaseMember('Alice');
